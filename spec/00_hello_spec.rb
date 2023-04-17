@@ -1,4 +1,4 @@
-require_relative '../lib/00_hello'
+require_relative '../lib/00_hello' #fonction qui dit "Hello!"
 
 describe "the hello function" do
   it "says hello" do
@@ -6,7 +6,7 @@ describe "the hello function" do
   end
 end
 
-describe "the greet function" do
+describe "the greet function" do #fonction qui dit "Hello!" avec le nom de l'utilisateur
   it "says hello to someone" do
     expect(greet("Alice")).to eq("Hello, Alice!")
   end

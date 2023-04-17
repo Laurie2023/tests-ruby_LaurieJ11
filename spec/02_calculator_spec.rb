@@ -42,28 +42,49 @@ end
 # we'll show you the first, you will write the others :)
 
 describe "#multiply" do
-
   it "multiplies two numbers" do
     expect(multiply(3, 4)).to eq(12)
   end
 
-  it "multiplies two other numbers"
+  it "multiplies two other numbers" do
+    expect(multiply(12, 100)).to eq(1200)
+  end
     # one other test here, don't forget do end ;)
+    #added _LB
 
-  it "multiplies two other numbers, one of them being 0"
+  it "multiplies two other numbers, one of them being 0" do
+    expect(multiply(12, 0)).to eq(0)
+  end
     # one last test, with 0 in it
-
+    #added _LB
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+  it "raises one number to the power of another number" do
+  expect(power(2, 10)).to eq(1024) #added _LB
+  end 
+
+  it "raises one number to the power of another number" do
+  expect(power(3, 3)).to eq(27) #added _LB
+  end 
 end
+
 
 # http://en.wikipedia.org/wiki/Factorial
 describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+  it "computes the factorial of 0" do
+    expect(factorial(0)).to eq("Error") #added _LB
+  end 
+  it "computes the factorial of 1" do
+    expect(factorial(1)).to eq(1) #added _LB
+  end 
+  it "computes the factorial of 2" do
+    expect(factorial(2)).to eq(2) #added _LB
+  end 
+  it "computes the factorial of 5" do
+  expect(factorial(5)).to eq(120) #added _LB
+  end 
+  it "computes the factorial of 10" do
+  expect(factorial(10)).to eq(3628800) #added _LB
+  end 
 end
